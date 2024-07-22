@@ -87,13 +87,7 @@ html body button:hover {
   padding: 1.2em;
   transition: background-color 0.3s ease-out;
 }
-.app__calculate-btn:disabled {
-  background-color: #bbb;
-}
-.app__calculate-btn:disabled:hover {
-  cursor: not-allowed;
-}
-.app__calculate-btn:enabled:hover {
+.app__calculate-btn:hover {
   background-color: #33f;
 }
 

@@ -4,7 +4,7 @@ const calculateBtn = document.querySelector(
 ) as HTMLButtonElement;
 
 const clearField = (field: HTMLInputElement) => {
-  field.value = "0,00";
+  field.value = "";
 };
 
 const calculateTip = (value: number, percentage: number): number => {
@@ -26,20 +26,6 @@ const showTip = (tipValue: number) => {
   output.textContent = formatter.format(tipValue);
 };
 
-const toggleEnableBtn = (
-  valueInput: HTMLInputElement,
-  percentageInput: HTMLInputElement
-) => {
-  if (
-    !isNaN(parseFloat(valueInput.value)) &&
-    !isNaN(parseFloat(percentageInput.value))
-  ) {
-    calculateBtn.removeAttribute("disabled");
-  } else {
-    calculateBtn.setAttribute("disabled", "true");
-  }
-};
-
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -58,13 +44,4 @@ form.addEventListener("submit", (event) => {
   clearField(percentageInput);
 
   calculateBtn.setAttribute("disabled", " ");
-});
-
-form.addEventListener("change", () => {
-  const valueInput = document.querySelector("#value") as HTMLInputElement;
-  const percentageInput = document.querySelector(
-    "#percentage"
-  ) as HTMLInputElement;
-
-  toggleEnableBtn(valueInput, percentageInput);
 });
