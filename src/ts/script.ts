@@ -4,12 +4,12 @@ const calculateBtn = document.querySelector(
 ) as HTMLButtonElement;
 
 const clearField = (field: HTMLInputElement) => {
-  field.value = "0";
+  field.value = "0,00";
 };
 
 const calculateTip = (value: number, percentage: number): number => {
-  percentage /= 100;
-  return percentage * value;
+  const tipValue: number = (percentage / 100) * value;
+  return value + tipValue;
 };
 
 const showTip = (tipValue: number) => {
@@ -49,8 +49,7 @@ form.addEventListener("submit", (event) => {
   ) as HTMLInputElement;
 
   const value: number = parseFloat(valueInput.value);
-  const percentage: number = parseFloat(percentageInput.value); // Corrigido
-
+  const percentage: number = parseFloat(percentageInput.value);
   const tipValue: number = calculateTip(value, percentage);
 
   showTip(tipValue);
