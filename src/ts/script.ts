@@ -42,6 +42,4 @@ form.addEventListener("submit", (event) => {
 
   clearField(valueInput);
   clearField(percentageInput);
-
-  calculateBtn.setAttribute("disabled", " ");
 });

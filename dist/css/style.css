@@ -53,7 +53,7 @@ html body button:hover {
   left: 50%;
   padding: 1em;
   position: absolute;
-  row-gap: 1em;
+  row-gap: 1.7em;
   top: 50%;
   transform: translate(-50%, -50%);
   width: clamp(320px, 90%, 480px);
@@ -81,14 +81,14 @@ html body button:hover {
 }
 
 .app__calculate-btn {
-  background-color: #55f;
+  background-color: #66f;
   border-radius: 0.6em;
   color: #fefefe;
   padding: 1.2em;
   transition: background-color 0.3s ease-out;
 }
 .app__calculate-btn:hover {
-  background-color: #33f;
+  background-color: #44f;
 }
 
 /*# sourceMappingURL=style.css.map */

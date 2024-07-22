@@ -27,6 +27,5 @@ form.addEventListener("submit", function (event) {
     showTip(tipValue);
     clearField(valueInput);
     clearField(percentageInput);
-    calculateBtn.setAttribute("disabled", " ");
 });
 //# sourceMappingURL=script.js.map
