@@ -1,0 +1,28 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "w-ts": "tsc --strict -w --removeComments --sourceMap src/ts/script.ts --outDir dist/js/",
+    "w-sass": "sass -w src/sass/style.scss dist/css/style.css",
+    "t-ts": "tsc --strict --removeComments --sourceMap src/ts/script.ts --outDir dist/js/",
+    "t-sass": "sass src/sass/style.scss dist/css/style.css",
+    "m-js": "uglifyjs dist/js/script.js -o dist/js/script.min.js",
+    "m-css": "uglifycss dist/css/style.css > dist/css/style.min.css",
+    "tm-style": "npm run t-sass; npm run m-css",
+    "tm-script": "npm run t-ts; npm run m-js",
+    "clear-css": "rm dist/css/*",
+    "clear-js": "rm dist/js/*",
+    "clear": "npm run clear-css; npm run clear-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.4",
+    "typescript": "^5.4.5",
+    "uglify-js": "^3.17.4",
+    "uglifycss": "^0.0.29"
+  }
+}

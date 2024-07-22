@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+
+  body {
+    background-color: #ededed;
+    color: #333;
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.25;
+    min-height: 100svh;
+    position: relative;
+
+    p {
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    button {
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

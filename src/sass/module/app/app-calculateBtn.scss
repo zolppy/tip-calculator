@@ -1,0 +1,21 @@
+.app__calculate-btn {
+  background-color: #55f;
+  border-radius: 0.6em;
+  color: #fefefe;
+  padding: 1.2em;
+  transition: background-color 0.3s ease-out;
+
+  &:disabled {
+    background-color: #bbb;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &:enabled {
+    &:hover {
+      background-color: #33f;
+    }
+  }
+}
